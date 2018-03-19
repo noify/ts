@@ -87,3 +87,36 @@ let strLength: number = (<string>someValue).length;
 
 strLength = (someValue as string).length;
 ```
+
+## 接口
+
+定义接口
+
+```ts
+ interface LabelledValue {
+    label: string; // 必选属性 且类型为string
+    readonly color?: string; // 只读 可选属性 且类型为string
+    [propName: string]: any; // 任意数量的不限类型的其它属性
+  }
+```
+
+绕过接口属性检查的三种方式
+
+  - 使用类型断言(最简便)
+  - 添加一个字符串索引签名(最佳)
+  - 将对象赋值给一个另一个变量(最怪异)
+
+```ts
+// 使用类型断言
+createSquare({ width: 100, opacity: 0.5 } as SquareConfig);
+
+// 添加一个字符串索引签名
+interface SquareConfig {
+  // ...
+  [propName: string]: any;
+}
+
+// 将对象赋值给一个另一个变量
+let squareOptions = { colour: "red", width: 100 };
+createSquare(squareOptions);
+```
