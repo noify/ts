@@ -11,9 +11,9 @@
   "emitDecoratorMetadata": true, // 给源码里的装饰器声明加上设计类型元数据
   "experimentalDecorators": true, // 启用实验性的ES装饰器
   "moduleResolution": "node",  // 决定如何处理模块。或者是"Node"对于Node.js/io.js，或者是"Classic"（默认）
-  "noEmitHelpers": true, // 不再输出文件中生成用户自定义的帮助函数代码，如__extends。
+  "noEmitHelpers": false, // 不再输出文件中生成用户自定义的帮助函数代码，如__extends。
   "noImplicitAny": true,     //在表达式和声明上有隐含的any类型时报错
-  "sourceMap": true,          //用于debug ,生成相应的.map文件
+  "sourceMap": false,          //用于debug ,生成相应的.map文件
   "declaration": false,
   "strictNullChecks": false,// 在严格的null检查模式下，null和undefined值不包含在任何类型里，只允许用它们自己和any来赋值（有个例外，undefined可以赋值到void）。
   "target": "es5",             // 编译目标平台（es3, es5, es2015）
