@@ -1,4 +1,4 @@
-namespace interfaces{
+namespace interfaces {
  interface LabelledValue {
     label: string; // 必须包含一个label属性且类型为string
     readonly color?: string; // 只读 可选属性

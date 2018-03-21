@@ -1,4 +1,4 @@
-namespace basicTypes{
+namespace basicTypes {
   let bool: boolean = false;
   let num: number = 6;
   let str: string = "bob";

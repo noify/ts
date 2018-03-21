@@ -1,4 +1,4 @@
-namespace classes{
+namespace classes {
   class Greeter {
     greeting: string;
     constructor(message: string) {

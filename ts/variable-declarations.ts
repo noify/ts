@@ -1,4 +1,4 @@
-namespace variableDeclarations{
+namespace variableDeclarations {
   let input = [1, 2];
   let [first, second] = input; // first2 1，second2 2
   [first, second] = [second, first]; // first2 2，second2 1
